@@ -1,5 +1,4 @@
 import sapatoImagem from "../../assets/images/sapato-social.jpeg";
-import "./productCard.css";
 
 export default function ProductCard({
   category = "Tênis",
@@ -13,18 +12,29 @@ export default function ProductCard({
     <>
       {/* INFORMAÇÕES FICTICIAS/TESTES! */}
 
-      <div className="Card">
-        {badge && <div className="CardBadge">{badgeText}</div>}
-        <img src={sapatoImagem} alt="Tênis" className="CardImage" />
+      <div className="w-[250px] rounded-[5%] mx-auto relative" >
+        {badge && (
+          <div
+            className="absolute top-3 left-3 font-bold text-xs bg-lime-200 text-gray-700 rounded-full"
+            style={{ padding: "3px 5px" }}
+          >
+            {badgeText}
+          </div>
+        )}
+        <img
+          src={sapatoImagem}
+          alt="Tênis"
+          className="w-full p-3 rounded-[5%] shadow-md"
+        />
 
-        <div className="CardText">
-          <h4>{category}</h4>
+        <div className="bg-white font-bold p-4">
+          <h4 className="text-neutral-50">{category}</h4>
           <h3>{name}</h3>
 
-          <div className="CardPrice">
+          <div className="flex gap-2">
             {badge ? (
               <>
-                <p className="PriceFull">{priceFull}</p>
+                <p className="line-through">{priceFull}</p>
                 <p>{priceDiscount}</p>
               </>
             ) : (

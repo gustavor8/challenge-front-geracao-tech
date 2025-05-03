@@ -2,6 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./Routes";
 import Header from "./components/header/Header";
 import ProductCard from "./components/productCard/productCard";
+import Footer from "./components/footer/footer";
 
 export default function App() {
   return (
@@ -9,9 +10,18 @@ export default function App() {
       <BrowserRouter>
         <Header />
         <main>
-          <ProductCard badge={true} />
-          <ProductCard badge={false} />
+          <div className="flex flex-wrap justify-center gap-10">
+            <ProductCard badge={true} />
+            <ProductCard badge={true} />
+            <ProductCard badge={false} />
+            <ProductCard badge={false} />
+            <ProductCard badge={false} />
+            <ProductCard badge={false} />
+            <ProductCard badge={false} />
+            <ProductCard badge={false} />
+          </div>
           <AppRoutes />
+          <Footer/>
         </main>
       </BrowserRouter>
     </>
