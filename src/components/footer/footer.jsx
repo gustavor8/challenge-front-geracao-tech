@@ -12,7 +12,7 @@ export default function Footer() {
       </div>
 
       <div>
-        <h3 className="text-white">Informação</h3>
+        <h3 className="text-amber-50 ">Informação</h3>
         <ul>
             <li>Sobre Drip Store</li>
             <li>Segurança</li>
