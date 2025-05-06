@@ -10,18 +10,22 @@ export default function App() {
       <BrowserRouter>
         <Header />
         <main>
-          <div className="flex flex-wrap justify-center gap-10">
-            <ProductCard badge={true} />
-            <ProductCard badge={true} />
-            <ProductCard badge={false} />
-            <ProductCard badge={false} />
-            <ProductCard badge={false} />
-            <ProductCard badge={false} />
-            <ProductCard badge={false} />
-            <ProductCard badge={false} />
+          <div>
+            <div className="flex justify-center gap-6">
+              <ProductCard badge={true} />
+              <ProductCard badge={true} />
+              <ProductCard badge={false} />
+              <ProductCard badge={false} />
+            </div>
+            <div className="flex justify-center gap-6">
+              <ProductCard badge={false} />
+              <ProductCard badge={false} />
+              <ProductCard badge={false} />
+              <ProductCard badge={false} />
+            </div>
           </div>
           <AppRoutes />
-          <Footer/>
+          <Footer />
         </main>
       </BrowserRouter>
     </>

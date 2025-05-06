@@ -12,10 +12,10 @@ export default function ProductCard({
     <>
       {/* INFORMAÇÕES FICTICIAS/TESTES! */}
 
-      <div className="w-[250px] rounded-[5%] mx-auto relative" >
+      <div className="w-[250px] rounded-[5%] mx-auto relative">
         {badge && (
           <div
-            className="absolute top-3 left-3 font-bold text-xs bg-lime-200 text-gray-700 rounded-full"
+            className="absolute top-3 left-3 font-bold text-sm bg-lime-200 text-gray-700 rounded-full"
             style={{ padding: "3px 5px" }}
           >
             {badgeText}
