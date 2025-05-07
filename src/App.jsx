@@ -9,6 +9,20 @@ export default function App() {
       <BrowserRouter>
         <Header />
         <main>
+          <div>
+            <div className="flex justify-center gap-6">
+              <ProductCard badge={true} />
+              <ProductCard badge={true} />
+              <ProductCard badge={false} />
+              <ProductCard badge={false} />
+            </div>
+            <div className="flex justify-center gap-6">
+              <ProductCard badge={false} />
+              <ProductCard badge={false} />
+              <ProductCard badge={false} />
+              <ProductCard badge={false} />
+            </div>
+          </div>
           <AppRoutes />
           <ProductDetails id={2} />
         </main>
