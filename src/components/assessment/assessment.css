@@ -1,0 +1,28 @@
+.assessmentContainer {
+  display: flex;
+  align-items: center;
+}
+
+.assessmentSvg {
+  width: 6.25rem;
+  height: 1.25rem;
+}
+
+.starsGray {
+  font-size: 1.25rem;
+  fill: lightgray;
+}
+
+.starsGold {
+  font-size: 1.25rem;
+  fill: gold;
+}
+
+.assessment {
+  padding: 0.1rem 0.6rem;
+  background-color: var(--yellowPrimary);
+  border-radius: 0.3125rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--white);
+}

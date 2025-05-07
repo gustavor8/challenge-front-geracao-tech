@@ -1,5 +1,18 @@
 :root {
   --pinkPrimary: #c92071;
+  --secondaryPink: #b5b6f2;
   --blackHover: #000000;
   --textGrey: #474747;
+  --tertiary: #991956;
+  --error: #ee4266;
+  --success: #52ca76;
+  --yellowPrimary: #f6aa1c;
+  --yellowSecondary: rgb(177, 129, 39);
+  --dark-gray: #1f1f1f;
+  --dark-gray-2: #474747;
+  --dark-gray-3: #666666;
+  --light-gray: #8f8f8f;
+  --light-gray-2: #cccccc;
+  --light-gray-3: #f5f5f5;
+  --white: #ffffff;
 }

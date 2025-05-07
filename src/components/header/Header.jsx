@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
 
 import logo from "../../assets/images/logo-header.svg";
@@ -44,9 +44,9 @@ export default function Header() {
               placeholder="Pesquisar produto..."
             />
 
-            <a href="#">
+            <Link to="#">
               <CiSearch className="searchIcon" />
-            </a>
+            </Link>
           </div>
           <button
             className={`searchButton ${
@@ -56,13 +56,13 @@ export default function Header() {
             <CiSearch size={25} />
           </button>
           <div className="login">
-            <a href="#">Cadastre-se</a>
+            <Link to="#">Cadastre-se</Link>
             <button>Entrar</button>
           </div>
           <div className="cart">
-            <a href="#">
+            <Link to="#">
               <BsCart4 size={20} className="cartIcon" />
-            </a>
+            </Link>
           </div>
         </div>
       </header>
@@ -102,9 +102,9 @@ export default function Header() {
             placeholder="Pesquisar produto..."
           />
 
-          <a href="#">
+          <Link to="#">
             <CiSearch className="searchIcon" />
-          </a>
+          </Link>
         </div>
       )}
     </>
