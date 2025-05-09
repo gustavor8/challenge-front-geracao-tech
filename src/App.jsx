@@ -2,6 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./Routes";
 import Header from "./components/header/Header";
 import ProductDetails from "./components/productDetails/produtcDetails";
+import ProductCard from "./components/productCard/productCard";
 
 export default function App() {
   return (

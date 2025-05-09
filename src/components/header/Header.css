@@ -49,6 +49,8 @@ header {
 .login {
   display: flex;
   gap: 1.6rem;
+  align-items: center;
+  justify-content: center;
 }
 .login a,
 .loginNav {
