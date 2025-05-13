@@ -1,0 +1,61 @@
+.galeryContainer {
+  max-width: 50rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.galeryMain {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: var(--light-gray-2);
+}
+
+.mainImage {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  display: block;
+}
+
+.navigationButton {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 15px 10px;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.prevButton {
+  left: 0;
+}
+
+.nextButton {
+  right: 0;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.thumbnail {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+  border: 1px solid grey;
+}
+
+.thumbnail.active {
+  opacity: 1;
+  border: 2px solid #333;
+}

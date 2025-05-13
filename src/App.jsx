@@ -1,10 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./Routes";
 import Header from "./components/header/Header";
-import ProductDetails from "./components/productDetails/produtcDetails";
-import ProductCard from "./components/productCard/productCard";
 import Footer from "./components/footer/footer";
-
 
 export default function App() {
   return (
@@ -12,24 +9,9 @@ export default function App() {
       <BrowserRouter>
         <Header />
         <main>
-          <div>
-            <div className="flex justify-center gap-6">
-              <ProductCard badge={true} />
-              <ProductCard badge={true} />
-              <ProductCard badge={false} />
-              <ProductCard badge={false} />
-            </div>
-            <div className="flex justify-center gap-6">
-              <ProductCard badge={false} />
-              <ProductCard badge={false} />
-              <ProductCard badge={false} />
-              <ProductCard badge={false} />
-            </div>
-          </div>
           <AppRoutes />
-          <ProductDetails id={2} />
-          <Footer/>
         </main>
+        <Footer />
       </BrowserRouter>
     </>
   );

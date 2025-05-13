@@ -1,5 +1,5 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import logo from "../../assets/images/logo-header.svg";
 import "./Header.css";
@@ -7,9 +7,18 @@ import { BsCart4 } from "react-icons/bs";
 import { CiSearch } from "react-icons/ci";
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
-  const screenWidth = window.innerWidth;
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const navItems = [
     { nome: "Home", href: "/" },
@@ -25,14 +34,16 @@ export default function Header() {
   return (
     <>
       <header>
-        <div
-          className={`hamburger ${isMenuOpen ? "" : "open"}`}
-          onClick={toggleMenu}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        {isMobile && (
+          <div
+            className={`hamburger ${isMenuOpen ? "open" : ""}`}
+            onClick={toggleMenu}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        )}
         <div className="headerTop">
           <figure>
             <img src={logo} alt="Logo Digital Store" />
@@ -66,19 +77,7 @@ export default function Header() {
           </div>
         </div>
       </header>
-      {screenWidth > 768 ? (
-        <nav>
-          <ul className="navList">
-            {navItems.map(({ nome, href }) => (
-              <li key={nome}>
-                <NavLink to={href} className="item">
-                  {nome}
-                </NavLink>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      ) : (
+      {isMobile ? (
         isMenuOpen && (
           <nav>
             <ul className="navList">
@@ -92,6 +91,18 @@ export default function Header() {
             </ul>
           </nav>
         )
+      ) : (
+        <nav>
+          <ul className="navList">
+            {navItems.map(({ nome, href }) => (
+              <li key={nome}>
+                <NavLink to={href} className="item">
+                  {nome}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </nav>
       )}
 
       {location.pathname === "/produtos" && (

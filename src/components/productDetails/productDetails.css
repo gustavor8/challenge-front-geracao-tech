@@ -4,6 +4,7 @@
   margin: 0 2.5rem;
   justify-content: space-between;
   padding: 0.5rem;
+  width: 100%;
 }
 
 .containerCarousel {
@@ -100,4 +101,33 @@
 
 .btnBuy:hover {
   background-color: var(--yellowSecondary);
+}
+
+@media (max-width: 768px) {
+  .ProductDetails {
+    flex-direction: column;
+    margin: 5px;
+    width: 100%;
+  }
+  .sizes {
+    overflow-x: auto;
+  }
+  .containerInfo h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .infoTitle {
+    font-size: 1rem;
+  }
+  .containerCarousel,
+  .containerInfo {
+    width: 98%;
+  }
+  .containerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
 }

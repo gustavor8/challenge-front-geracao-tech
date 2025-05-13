@@ -19,7 +19,7 @@ export const mockProducts = [
     colors: ["#000000", "#555555"],
   },
   {
-    productId: 1,
+    productId: 2,
     title: "Tênis Pulse Urban",
     images: [
       {
@@ -38,7 +38,7 @@ export const mockProducts = [
     colors: ["#222222", "#888888"],
   },
   {
-    productId: 1,
+    productId: 3,
     title: "Tênis Galaxy Pro",
     images: [
       {
@@ -57,7 +57,7 @@ export const mockProducts = [
     colors: ["#0033FF", "#000000"],
   },
   {
-    productId: 2,
+    productId: 4,
     title: "Tênis Vision Street",
     images: [
       {
@@ -76,7 +76,7 @@ export const mockProducts = [
     colors: ["#FFFFFF", "#333333"],
   },
   {
-    productId: 3,
+    productId: 5,
     title: "Tênis Impact Run",
     images: [
       {
@@ -95,7 +95,7 @@ export const mockProducts = [
     colors: ["#FF0000", "#111111"],
   },
   {
-    productId: 4,
+    productId: 6,
     title: "Tênis Casual Color",
     images: [
       {
@@ -114,7 +114,7 @@ export const mockProducts = [
     colors: ["#FF69B4", "#00FFFF", "#FFA500"],
   },
   {
-    productId: 5,
+    productId: 7,
     title: "Tênis Sport Wave",
     images: [
       {
@@ -133,7 +133,7 @@ export const mockProducts = [
     colors: ["#0000FF", "#A9A9A9"],
   },
   {
-    productId: 6,
+    productId: 8,
     title: "Tênis Eco Move",
     images: [
       {
@@ -152,7 +152,7 @@ export const mockProducts = [
     colors: ["#228B22", "#A0522D"],
   },
   {
-    productId: 7,
+    productId: 9,
     title: "Tênis Night Runner",
     images: [
       {
@@ -171,7 +171,7 @@ export const mockProducts = [
     colors: ["#000000", "#444444"],
   },
   {
-    productId: 8,
+    productId: 10,
     title: "Tênis Breeze Light",
     images: [
       {
@@ -188,5 +188,38 @@ export const mockProducts = [
     descontedPrice: "289.90",
     sizes: ["36", "37", "38", "39", "40"],
     colors: ["#F5F5DC", "#FFE4B5"],
+  },
+];
+
+export const productsPromotion = [
+  {
+    productId: 1,
+    descPromotion: "Tênis Drip Classic ",
+    src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-1.jpeg",
+    descProduct: "Tênis casual com design moderno e confortável.",
+  },
+  {
+    productId: 2,
+    descPromotion: "Tênis Pulse Urban ",
+    src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-2.jpeg",
+    descProduct: "Ideal para caminhada e uso urbano, leve e estiloso.",
+  },
+  {
+    productId: 3,
+    descPromotion: "Tênis Galaxy Pro ",
+    src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-3.jpeg",
+    descProduct: "Performance esportiva com máximo conforto e estabilidade.",
+  },
+  {
+    productId: 4,
+    descPromotion: "Tênis Vision Street ",
+    src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-4.jpeg",
+    descProduct: "Estilo urbano com material resistente e confortável.",
+  },
+  {
+    productId: 5,
+    descPromotion: "Tênis Impact Run ",
+    src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-5.jpeg",
+    descProduct: "Perfeito para corridas leves e treinos diários.",
   },
 ];

@@ -3,6 +3,7 @@ header {
   justify-content: center;
   flex-direction: column;
   padding: 1rem 6rem 0 6rem;
+  width: 100%;
 }
 
 .headerTop {
@@ -195,19 +196,19 @@ nav a:hover {
   display: none;
 }
 .hamburger span:nth-child(1) {
-  transform: rotate(55deg); /* Rotaciona para X */
+  transform: rotate(0deg); /* Volta para a linha horizontal */
   position: relative;
-  top: 10px;
+  top: 0;
 }
 
 .hamburger span:nth-child(2) {
-  opacity: 0; /* Oculta a linha do meio */
+  opacity: 1; /* Mostra a linha do meio */
 }
 
 .hamburger span:nth-child(3) {
-  transform: rotate(-55deg); /* Rotaciona para X */
+  transform: rotate(0deg); /* Volta para a linha horizontal */
   position: relative;
-  top: -10px;
+  top: 0;
 }
 
 .searchContainerNav {
@@ -215,19 +216,19 @@ nav a:hover {
 }
 /* Quando o menu está aberto, o hambúrguer volta para as linhas horizontais */
 .hamburger.open span:nth-child(1) {
-  transform: rotate(0deg); /* Volta para a linha horizontal */
+  transform: rotate(55deg); /* Rotaciona para X */
   position: relative;
-  top: 0;
+  top: 10px;
 }
 
 .hamburger.open span:nth-child(2) {
-  opacity: 1; /* Mostra a linha do meio */
+  opacity: 0; /* Mostra a linha do meio */
 }
 
 .hamburger.open span:nth-child(3) {
-  transform: rotate(0deg); /* Volta para a linha horizontal */
+  transform: rotate(-55deg); /* Rotaciona para X */
   position: relative;
-  top: 0;
+  top: -10px;
 }
 
 /* Responsividade */

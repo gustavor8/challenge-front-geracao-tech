@@ -1,23 +1,24 @@
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import "./productDetails.css";
-import Assessment from "../assessment/assessment";
-import Carousel from "../carousel/carousel.jsx";
+import Assessment from "../assessment/assessment.jsx";
+import Galery from "../galery/galery.jsx";
 import { mockProducts } from "../../../arquivos_testes/test.js";
 
-export default function ProductDetails({ id }) {
+export default function ProductDetails() {
+  const { productId } = useParams();
   const [sizeTennis, setSizeTennis] = useState(0);
   const [indexColor, setIndexColor] = useState();
   const [selectedProduct, setSelectedProduct] = useState(0);
 
-  console.log(selectedProduct);
   useEffect(() => {
-    const found = mockProducts.find((prod) => prod.productId === id);
+    const found = mockProducts.find(
+      (prod) => prod.productId === parseInt(productId)
+    );
     setSelectedProduct(found);
-  }, [id]);
+  }, [productId]);
 
-  console.log(selectedProduct);
-
-  if (!selectedProduct) return <h2>Buscando o produto no banco de dados.</h2>;
+  if (!selectedProduct) return <h2>Buscando o produto no banco de dados...</h2>;
 
   const {
     title,
@@ -36,7 +37,7 @@ export default function ProductDetails({ id }) {
   return (
     <div className="ProductDetails">
       <section className="containerCarousel">
-        <Carousel images={images}></Carousel>
+        <Galery images={images}></Galery>
       </section>
 
       <section className="containerInfo">
