@@ -223,3 +223,21 @@ export const productsPromotion = [
     descProduct: "Perfeito para corridas leves e treinos diários.",
   },
 ];
+
+export const colections = [
+  {
+    id: 1,
+    src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/refs/heads/main/public/collection-1.png",
+    discount: 30,
+  },
+  {
+    id: 2,
+    src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/refs/heads/main/public/collection-2.png",
+    discount: 30,
+  },
+  {
+    id: 3,
+    src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/refs/heads/main/public/collection-3.png",
+    discount: 30,
+  },
+];
