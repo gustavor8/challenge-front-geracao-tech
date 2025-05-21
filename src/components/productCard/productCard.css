@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../../assets/fonts/Inter_18pt-Bold.ttf") format("truetype");
+}
+
+
+@theme{
+  --font-inter: "Inter", sans-serif;
+}
+
