@@ -1,12 +1,12 @@
-# React + Vite
+# Challenge Front – Geração Tech 2.0 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto foi desenvolvido como parte do desafio final do **módulo de Front-end** do curso **Full Stack React + Node**, oferecido pela iniciativa **Geração Tech 2.0**.
 
-Currently, two official plugins are available:
+A proposta consistia em construir uma aplicação web completa utilizando **React**, com foco em responsividade, consumo de APIs, gerenciamento de estados, rotas e formulários com validações.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O principal objetivo deste desafio foi consolidar os conhecimentos adquiridos ao longo do módulo, por meio da aplicação de boas práticas de desenvolvimento front-end moderno.
 
-## Expanding the ESLint configuration
+O projeto foi realizado de forma colaborativa pelos desenvolvedores **Gustavo Rodrigues **, **João Luis Silva Venâncio** e **José Jeferson**, promovendo o trabalho em equipe e a integração de diferentes habilidades técnicas.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔗 **Acesse a aplicação em produção:**  
+[https://challenge-front-geracao-tech-swgq.vercel.app/](https://challenge-front-geracao-tech-swgq.vercel.app/)

@@ -40,6 +40,7 @@ export default function Carousel({ products }) {
           <img className="mainImage" src={products[currentSlide].src} />
         </div>
       </div>
+
       <div className="indicators">
         {products.map((_, index) => (
           <button
