@@ -1,7 +1,7 @@
 export default function category() {
   return (
     <>
-      <h1>urijerhgiregji</h1>
+      <h1>Página de categorias</h1>
     </>
   );
 }
